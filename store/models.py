@@ -28,3 +28,15 @@ class OrderItem(models.Model):
     def __str__(self):
         return self.name
     
+class ShippingAddress(models.Model):
+    #customer = models.ForeignKey(Customer, on_delete=models.SET_NULL, null=True)
+	#order = models.ForeignKey(Order, on_delete=models.SET_NULL, null=True)
+    customer = models.CharField(max_length=50)
+    address = models.CharField(max_length=50)
+    city = models.CharField(max_length=50)
+    state = models.CharField(max_length=50)
+    zipcode = models.CharField(max_length=50)
+    date_added = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.address
