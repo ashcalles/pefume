@@ -1,0 +1,120 @@
+<style>
+
+    body {background-color: white;}   
+
+    div#main {position: relative;
+            box-sizing: border-box;
+            background-color: white;
+            height: 100%;
+            width: 100%;
+            border: 5px solid pink;
+            margin-left: auto;
+            margin-right: auto;
+            z-index: 1;}
+
+    div#topmiddle {
+        position: absolute;
+        box-sizing: border-box;
+        height: 125px;
+        width: 100%;
+        top: 0px;
+        text-align: center;
+    }
+
+    div#middle {position: absolute;
+                box-sizing: border-box;
+                background-color: white;
+                border: 5px solid pink;
+                height: 450px;
+                width: 400px;
+                top: 185px;
+                right:500px;
+                text-align: center;}
+
+    h1 {font-size: 70px;
+        color: purple;
+        font-family: cursive;
+    }
+    
+    h2 {
+        font-size: 40px;
+        color:purple;
+    }
+
+    td {
+        font-size: 40px;
+        color:purple;
+        padding:10px 50px;
+    }
+
+    input {
+        height: 40px;
+    }
+
+    .login {
+        font-size: 23px;
+        color: white;
+        width: 40%;
+        text-align: center;
+        width: 150px;
+    }
+
+    a.title {
+        font-size: 70px;
+        color: purple;
+        font-family: cursive;
+        text-decoration: none;
+        top: 10px;
+    }
+
+</style>
+
+<body>
+
+    <div id="main">
+
+        <div id="topmiddle">
+            <a class="title" href="http://127.0.0.1:8000/"> Perfume </a> 
+        </div>
+
+        <div id="middle">
+            <h2> Create New Account </h2>
+            <form>
+                <table>
+                    <tr ccolor="white">
+                    
+                        <td> 
+                            <input type="name" size="40" id="name" placeholder="First and Last Name"> 
+                        </td>
+                    </tr>
+                    <tr ccolor="white">
+                    
+                        <td> 
+                            <input type="address" size="40" id="address" placeholder="Address"> 
+                        </td>
+                    </tr>
+                    <tr ccolor="white">
+                    
+                        <td> 
+                            <input type="email" size="40" id="yourEmail" placeholder="Email"> 
+                        </td>
+                    </tr>
+
+                    <tr ccolor="white">
+                        
+                        <td> 
+                            <input type="password" size="40" id="password" placeholder="Password"> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="button" class="login" style="background-color: purple;"> Submit </button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+    </div>
+
+</body>
